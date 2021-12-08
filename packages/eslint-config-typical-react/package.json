@@ -1,0 +1,47 @@
+{
+  "name": "eslint-config-typical-react",
+  "version": "1.0.0",
+  "description": "ESLint config for typical React projects",
+  "files": [
+    "base.js",
+    "index.js",
+    "jest.js"
+  ],
+  "author": "Tommy Groshong <tgroshon@pm.me>",
+  "license": "MIT",
+  "scripts": {
+    "test": "tape"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tgroshon/typical.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tgroshon/typical/issues"
+  },
+  "homepage": "https://github.com/tgroshon/typical#readme",
+  "peerDependencies": {
+    "eslint": "^8.0.0"
+  },
+  "dependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/eslint-parser": "^7.16.3",
+    "@rushstack/eslint-patch": "^1.1.0",
+    "@typescript-eslint/eslint-plugin": "^5.5.0",
+    "@typescript-eslint/parser": "^5.5.0",
+    "babel-preset-react-app": "^10.0.0",
+    "confusing-browser-globals": "^1.0.10",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-flowtype": "^8.0.3",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jest": "^25.3.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-testing-library": "^5.0.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

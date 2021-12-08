@@ -1,0 +1,31 @@
+{
+  "name": "@typical/cli",
+  "version": "1.0.0",
+  "description": "Typical CLI tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape"
+  },
+  "author": "Tommy Groshong <tgroshon@pm.me>",
+  "license": "MIT",
+  "dependencies": {
+    "arrify": "^2.0.1",
+    "boolify": "^1.0.0",
+    "camelcase-keys": "^6.0.0",
+    "chalk": "^5.0.0",
+    "common-tags": "^1.8.0",
+    "core-js": "^3.1.4",
+    "eslint": "^5.0.0",
+    "find-up": "^4.1.0",
+    "get-stdin": "^7.0.0",
+    "glob": "^7.1.4",
+    "ignore": "^5.1.2",
+    "indent-string": "^4.0.0",
+    "lodash.memoize": "^4.1.2",
+    "loglevel-colored-level-prefix": "^1.0.0",
+    "messageformat": "^2.2.1",
+    "prettier-eslint": "^9.0.0",
+    "rxjs": "^6.5.2",
+    "yargs": "^13.2.4"
+  }
+}

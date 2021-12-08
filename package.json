@@ -1,0 +1,20 @@
+{
+  "name": "typical",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Tommy Groshong <tgroshon@pm.me>",
+  "homepage": "https://github.com/tgroshon/typical#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tgroshon/typical.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tgroshon/typical/issues"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape"
+  },
+  "workspaces": ["./packages/*"]
+}
