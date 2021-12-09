@@ -14,7 +14,9 @@ import getLogger from "loglevel-colored-level-prefix";
 import ConfigFile from "eslint/lib/config/config-file";
 import Linter from "eslint/lib/linter";
 import Config from "eslint/lib/config";
+import MessageFormat from "messageformat";
 
+const mf = new MessageFormat("en");
 const LINE_SEPERATOR_REGEX = /(\r|\n|\r\n)/;
 const rxGlob = bindNodeCallback(glob);
 const rxReadFile = bindNodeCallback(fs.readFile);
@@ -92,19 +94,18 @@ export default function formatFilesFromArgv({
     );
   }
 
-  const cliOptions = { write, listDifferent };
   if (stdin) {
     return formatStdin({ filePath: stdinFilepath, ...prettierESLintOptions });
-  } else {
-    return formatFilesFromGlobs({
-      fileGlobs,
-      ignoreGlobs: [...ignoreGlobs], // make a copy to avoid manipulation
-      cliOptions,
-      prettierESLintOptions,
-      applyEslintIgnore,
-      applyPrettierIgnore,
-    });
   }
+
+  return formatFilesFromGlobs({
+    fileGlobs,
+    ignoreGlobs: [...ignoreGlobs], // make a copy to avoid manipulation
+    cliOptions: { write, listDifferent },
+    prettierESLintOptions,
+    applyEslintIgnore,
+    applyPrettierIgnore,
+  });
 }
 
 async function formatStdin(prettierESLintOptions) {
